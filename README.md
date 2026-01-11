@@ -62,6 +62,8 @@ Rather than replicating the published analysis, this project extends the work by
 - Normalization and batch effect assessment
 - Highly variable gene selection
 
+![Alt text for the image](/figures/01_PreProcessing.png"Optional title for the image")
+
 ### Part 2: Dimensionality Reduction & Clustering
 - PCA for noise reduction and computational efficiency
 - UMAP visualization of cellular heterogeneity
