@@ -62,7 +62,7 @@ Rather than replicating the published analysis, this project extends the work by
 - Normalization and batch effect assessment
 - Highly variable gene selection
 
-![Alt text for the image](/figures/01_PreProcessing.png"Optional title for the image")
+![Preprocessing Summary Figure](https://raw.githubusercontent.com/ensiferum877/pd-scrna-seq-analysis/dev/preprocessing-notebook/figures/01_PreProcessing.png "Overview of Cell Filtering and Quality Control")
 
 ### Part 2: Dimensionality Reduction & Clustering
 - PCA for noise reduction and computational efficiency
