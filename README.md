@@ -57,10 +57,15 @@ Rather than replicating the published analysis, this project extends the work by
 ## Analysis Workflow
 
 ### Part 1: Quality Control & Preprocessing
-- Raw data inspection and quality metric calculation
-- Cell and gene filtering with biological justification
-- Normalization and batch effect assessment
-- Highly variable gene selection
+
+This notebook systematically processed the raw single-cell RNA-seq count matrices to obtain a high-quality dataset ready for downstream analysis. Key steps included:
+
+- Doublet Detection: Artificial cell doublets were identified and removed using Scrublet.
+- Quality Metric Calculation: Standard QC metrics (e.g., number of genes, total counts, mitochondrial, ribosomal, and hemoglobin gene percentages) were computed for each cell.
+- Adaptive Filtering: Low-quality cells were filtered based on data-driven percentile thresholds derived from the calculated QC metrics.
+- Gene Filtering: Genes expressed in fewer than a specified minimum number of cells were removed to reduce noise and dimensionality.
+  
+This process ensured that only high-confidence cells and relevant genes were retained, as summarized in the figure below:
 
 ![Preprocessing Summary Figure](https://raw.githubusercontent.com/ensiferum877/pd-scrna-seq-analysis/dev/preprocessing-notebook/figures/01_PreProcessing.png "Overview of Cell Filtering and Quality Control")
 
